@@ -1,0 +1,11 @@
+USE [URP_SISTEMA_COMPRA]
+GO
+
+CREATE PROCEDURE buscar_USUARIO_por_correo
+	@correo VARCHAR(max)
+AS
+SELECT
+	Password
+FROM 
+	USUARIO2
+WHERE Correo = @correo
